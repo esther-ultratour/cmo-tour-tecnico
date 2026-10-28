@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Teste popup técnico</title>
+<style>
+  body{margin:0;padding:16px;font-family:sans-serif;background:#5a7499}
+  button{margin:4px;padding:10px 14px;font-size:15px}
+</style>
+</head>
+<body>
+  <div id="botoes"></div>
+  <label><input type="checkbox" id="escuro"> tema escuro</label>
+  <script src="conteudo-popup.js"></script>
+  <script src="popup-tecnico.js"></script>
+  <script>
+    // conteúdo de exemplo só para o teste
+    PopupTecnicoConteudo.gas.html = '<p>Exemplo de texto.</p>' + '<p>Linha</p>'.repeat(20);
+    Object.keys(PopupTecnicoConteudo).forEach(function (c) {
+      var b = document.createElement('button');
+      b.textContent = c;
+      b.onclick = function () { PopupTecnico[c](document.getElementById('escuro').checked ? 'escuro' : 'claro'); };
+      document.getElementById('botoes').appendChild(b);
+    });
+  </script>
+</body>
+</html>
