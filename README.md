@@ -21,7 +21,7 @@ Executar **uma vez**, no Main Viewer do tour (ex.: ação ao iniciar o tour). Ca
 
 ```js
 (function () {
-  var BASE = 'https://URL-DA-PASTA-POPUPS/'; // pasta onde estão os arquivos, com "/" no final
+  var BASE = 'https://skylineip.s3.sa-east-1.amazonaws.com/Tour%20Virtual/CMO/ferramentas/tour%20t%C3%A9cnico/popups/'; // pasta onde estão os arquivos, com "/" no final
 
   function carregar(src, cb) {
     var s = document.createElement('script');
@@ -38,7 +38,7 @@ Executar **uma vez**, no Main Viewer do tour (ex.: ação ao iniciar o tour). Ca
 })();
 ```
 
-> Troque `BASE` pela URL pública da pasta `popups/` no S3.
+> Esta é a URL pública da pasta `popups/` no S3.
 
 ## 2. Funções por categoria (hotspots)
 

@@ -77,7 +77,7 @@
       '.pt-corpo{flex:1 1 auto;overflow:auto;-webkit-overflow-scrolling:touch;font-size:17px;line-height:1.5;color:var(--pt-texto)}',
       '.pt-corpo img{max-width:100%;height:auto}',
       '.pt-vazio{opacity:.6;font-style:italic}',
-      '.pt-faixa{flex:none;width:42px;margin:0 17px 0 0;background:var(--pt-faixa) center/cover repeat-y}',
+      '.pt-faixa{flex:none;width:42px;background:var(--pt-faixa) center/cover repeat-y}',
       '.pt-fechar{position:absolute;top:-10px;right:-8px;width:75px;height:75px;padding:0;border:0;cursor:pointer;',
       '  background:' + b('normal') + ' center/contain no-repeat;-webkit-tap-highlight-color:transparent}',
       '.pt-fechar:hover{background-image:' + b('hover') + '}',
@@ -92,7 +92,7 @@
       '  .pt-icone{width:48px;height:48px}',
       '  .pt-titulo{font-size:21px}',
       '  .pt-corpo{font-size:15px}',
-      '  .pt-faixa{width:24px;margin-right:10px}',
+      '  .pt-faixa{width:24px}',
       '  .pt-fechar{width:52px;height:52px;top:-8px;right:-6px}',
       '}',
       /* celular em paisagem (pouca altura) */
