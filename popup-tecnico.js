@@ -58,7 +58,7 @@
   }
 
   function url(relativo) {
-    return encodeURI(config.caminhoAssets + relativo);
+    return config.caminhoAssets + encodeURI(relativo);
   }
 
   function css() {
